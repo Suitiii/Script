@@ -32,7 +32,7 @@ local gui = Instance.new("ScreenGui")
 	velocidade.Parent = frame
 	
 	gui.Parent = player.PlayerGui
-	frame.ZIndex = 10
+	frame.ZIndex = 100
 	frame.Transparency = 1
 	text.Transparency = 1
 	velocidade.Transparency = 1
