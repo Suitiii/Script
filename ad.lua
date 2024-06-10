@@ -108,7 +108,7 @@ local player = game.Players.LocalPlayer
 		 button1.Text = "X"
 		    for i, k in ipairs(players:GetPlayers()) do
 			     if k.Name then
-				  local playe = works:WaitForChild(k.Name)
+				  local playe = works:WaitForChild("Living"):WaitForChild(k.Name)
 				  local luz = Instance.new("Highlight")
 				  luz.Parent = playe
 					
