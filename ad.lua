@@ -65,4 +65,20 @@ local gui = Instance.new("ScreenGui")
 		humanoid.WalkSpeed = 50
 		
 	end)
+
+
+
+local works = game:GetService("Workspace")
+	local players = game:GetService("Players")
+	
+	for i, k in ipairs(players:GetPlayers()) do
+	   if k.Name then
+			local playe = works:WaitForChild(k.Name)
+			local luz = Instance.new("Highlight")
+			luz.Parent = playe
+	   end
+	   
+	
+	
+	end
 	
