@@ -1,3 +1,11 @@
+local we = game:GetService("Workspace")
+local ab = we:WaitForChild("Item_Spawns")
+local bu = ab:WaitForChild("Items")
+
+for i, k in ipairs(bu:GetChildren())
+
+print(i.."itens")
 
 
-local a=game:GetService("Workspace")local a=a:WaitForChild("Item_Spawns")local a=a:WaitForChild("Items")local function b()for a,a in ipairs(a:GetChildren())do if a:IsA("Model")then if not a:FindFirstChildWhichIsA("Highlight")then luz=Instance.new("Highlight")luz.FillTransparency=0;luz.FillColor=Color3.fromRGB(255,0,0)luz.OutlineColor=Color3.fromRGB(255,255,255)luz.Parent=a;wait(0.5)end end end end;while true do wait(1)b()end
+end
+
