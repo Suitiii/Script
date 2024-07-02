@@ -2,6 +2,16 @@ local we = game:GetService("Workspace")
 local ab = we:WaitForChild("Item_Spawns")
 local bu = ab:WaitForChild("Items")
 
+
+if ab then
+print(1)
+end
+
+if bu then
+print(1)
+end
+
+
 for i, k in ipairs(bu:GetChildren())
 
 print(i.."itens")
