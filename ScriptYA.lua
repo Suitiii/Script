@@ -4,22 +4,19 @@ local folder1 = works:WaitForChild("Item_Spawns")
 
 local folder2 = folder1:WaitForChild("Items")
 
-print("sapo")
 
-if works then
-  print(1)
+
+
+
+local function msg(item)
+	
+	print(tostring(item).. " spawnou!")
+end
+
+local function msg2(item)
+	print(tostring(item).. "desespawnou!")
 end
 
 
-if folder1 then
-  print(2)
-end
-
-if folder2 then 
-  print(3)
-end
-
-
-for i, k in ipairs(folder2:GetChildren()) do
-print(i.." items")
-end
+folder2.ChildAdded:Connect(msg)
+folder2.ChildRemoved:Connect(msg2)
