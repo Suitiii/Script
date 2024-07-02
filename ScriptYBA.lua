@@ -4,7 +4,7 @@ local folder1 = works:WaitForChild("Item_Spawns")
 
 local folder2 = folder1:WaitForChild("Items")
 
-print("abelha")
+print("sapo")
 
 if works then
   print(1)
