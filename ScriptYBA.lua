@@ -18,3 +18,8 @@ end
 if folder2 then 
   print(3)
 end
+
+
+for i, k in ipairs(folder2:GetChildren()) do
+print(i.." items")
+end
